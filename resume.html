@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Resume Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 3rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: #4a5568;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .job-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-size: 1.1rem;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        .date {
+            color: #718096;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .role-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .role-title {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            padding-left: 0.5rem;
+            border-left: 3px solid #3182ce;
+        }
+
+        .description ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .description li {
+            margin-bottom: 0.75rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .description li::before {
+            content: "•";
+            position: absolute;
+            left: -1rem;
+            color: #3182ce;
+        }
+
+        .experience-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3182ce;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                padding: 1.5rem;
+                border-radius: 0;
+            }
+
+            .description ul {
+                padding-left: 1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+        .skills-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #eee;
+        }
+
+        .skills-title {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill-group {
+            margin-bottom: 1.5rem;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .skill-group-title {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 3px solid #3182ce;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background: #EDF2F7;
+            color: #2D3748;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid #E2E8F0;
+        }
+
+        .skill-tag:hover {
+            background: #E2E8F0;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+
+            .skill-group {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Rolando Tactay</h1>
+            <div class="contact-info">
+                <span>📧rtactayjr101@outlook.ph </span>
+                <span>📍 Philippines</span>
+            </div>
+        </header>
+
+        <div class="experience-item">
+            <div class="job-title">Technology Lead</div>
+            <div class="company">AlgorithmX</div>
+            <div class="date">November 2023 - Present</div>
+
+            <div class="description">
+                <div class="role-section">
+                    <div class="role-title">Technology lead</div>
+                    <ul>
+                        <li>Managed multiple projects using Agile/Scrum methodologies, leading daily stand-ups, sprint
+                            planning, retrospectives, and sprint reviews to ensure consistent deadline achievement</li>
+                        <li>Served as bridge between engineering, product, and operations teams, optimizing workflows
+                            and streamlining cross-departmental processes</li>
+                        <li>Fostered continuous improvement culture through internal workshops, knowledge-sharing
+                            sessions, and technology adoption initiatives</li>
+                        <li>Oversaw end-to-end development lifecycle, collaborating with product managers and
+                            stakeholders to align project goals with business objectives</li>
+                    </ul>
+                </div>
+
+                <div class="role-section">
+                    <div class="role-title">Software Engineer</div>
+                    <ul>
+                        <li>Architected self-hosted AI solution integrating RAG, TTS/STT, image generation, web
+                            crawling, search engine capabilities, and multiple AI models with comprehensive data
+                            pipeline</li>
+                        <li>Led development of client web platform for product catalog, implementing user
+                            authentication, payment systems, and email notifications with 99.99% uptime target</li>
+                        <li>Managed internal trading knowledge platform development, focusing on Django Rest Framework
+                            backend integration with React frontend</li>
+                        <li>Designed streamlined development infrastructure for efficient team member onboarding across
+                            all projects</li>
+                        <li>Spearheaded development of internal scripts, demo tools, and research initiatives to enhance
+                            operational efficiency</li>
+                    </ul>
+                </div>
+
+                <div class="role-section">
+                    <div class="role-title">IT System Administration</div>
+                    <ul>
+                        <li>Implemented and maintained Agile development practices focusing on iterative progress and
+                            team collaboration</li>
+                        <li>Provided comprehensive technical guidance and mentorship to interns, creating personalized
+                            development paths</li>
+                        <li>Established structured task assignment system based on skill levels, ensuring challenging
+                            yet achievable goals</li>
+                        <li>Conducted regular code reviews and quality assurance checks to maintain high development
+                            standards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Previous Position 1 -->
+        <div class="experience-item">
+            <div class="job-title">Application Engineer</div>
+            <div class="company">Hedgeserv</div>
+            <div class="date">February 2023 - February 2024</div>
+            <div class="description">
+                <div class="role-section">
+                    <div class="role-title">Application Engineer & Maintenance</div>
+                    <ul>
+                        <li>Issue Escalation & Resolution: Identified, documented, and escalated application bugs, code defects, and functional queries to vendor support teams and internal developers. 
+                            Coordinated enhancement requests to improve application functionality and end-user experience.</li>
+                        <li>Database Analysis & Troubleshooting: Utilized SQL and database management tools to investigate application issues. Analyzed logs, reviewed stored procedures, 
+                            and connected tables to derive insights, identify root causes, and provide meaningful data-driven findings.</li>
+                        <li>Process Automation: Automated recurring processes and tasks using scripting languages such as PowerShell, Python, 
+                            and Bash, significantly reducing manual efforts and enhancing operational efficiency.</li>
+                        <li>Infrastructure Analysis & Collaboration: Diagnosed and analyzed infrastructure-related issues impacting application performance. 
+                            Proposed solutions and collaborated closely with infrastructure teams to implement improvements and ensure a stable application environment.</li>
+                        <li>On-Premise Application Management: Maintained and administered on-premise servers and virtual machines where applications were deployed. 
+                            Developed a thorough understanding of inter-application dependencies to support troubleshooting and contribute to operational and strategic discussions.</li>
+                        <li>Cross-Functional Collaboration: Engaged with cross-functional teams, including development, infrastructure, 
+                            and operations, to ensure a seamless application lifecycle and support strategic initiatives. 
+                            Actively contributed technical insights to enhance project outcomes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">Service Desk Engineer</div>
+            <div class="company">Hegdeserv</div>
+            <div class="date">May 2022 - February 2023</div>
+            <div class="description">
+                <div class="role-section">
+                    <div class="role-title">Global Engineering & Operations Functions Maintenance</div>
+                    <ul>
+                        <li>Technology & Operations Support: Responsible for maintaining and supporting global engineering and operational functions, 
+                            ensuring the smooth running of both the tech stack and operational technologies essential for management and coordination.</li>
+                        <li>Technology Administration & Process Management: Oversee the administration of systems, technologies, and processes, ensuring efficient coordination of resources and alignment with operational goals.</li>
+                        <li>Server/VM Operations & Administration: Manage server and virtual machine (VM) operations for both production and non-production environments, ensuring high availability, performance, and reliability.</li>
+                        <li>Infrastructure Monitoring & Alerts Management: Lead the management of infrastructure alerts, including CPU, memory, disk utilization, application availability, cluster issues, and core application serviceability, ensuring prompt responses to any performance or service disruptions.</li>
+                        <li>Environment Stability & Troubleshooting: Monitor and troubleshoot environment stability by analyzing application and system logs. Provide recommendations for remediation based on identified issues, ensuring minimal system downtime and optimal performance.</li>
+                        <li>Performance Analysis & Troubleshooting: Analyze performance dashboard data and use process monitoring tools to evaluate specific resource utilization, identifying and resolving bottlenecks or inefficiencies in system performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous Position 2 -->
+        <div class="experience-item">
+            <div class="job-title">IT/Service Desk Analyst</div>
+            <div class="company">CGI/Wipro</div>
+            <div class="date">November 2018 - May 2022</div>
+
+            <div class="description">
+                <div class="role-section">
+                    <div class="role-title">IT Analyst</div>
+                    <p> Experienced IT Service Desk Analyst with expertise in providing high-level technical support, managing complex incidents, 
+                        and ensuring seamless IT service delivery. As a Subject Matter Expert (SME), 
+                        I specialize in troubleshooting, diagnosing, and resolving hardware, software, and network issues for end-users,
+                        both remotely and on-site. I take ownership of critical service desk issues, escalate when necessary, 
+                        and collaborate with other teams to ensure timely resolution.
+                    </p><br>
+                    <ul>
+                        <li>Experienced IT Service Desk Analyst with expertise in providing high-level technical support, managing complex incidents, and ensuring seamless IT service delivery. As a Subject Matter Expert (SME), I specialize in troubleshooting, diagnosing, and resolving hardware, software, and network issues for end-users, both remotely and on-site. 
+                            I take ownership of critical service desk issues, escalate when necessary, and collaborate with other teams to ensure timely resolution.</li>
+                        <li>Managing incident tickets, prioritizing based on severity, and adhering to SLA targets to ensure prompt issue resolution.</li>
+                        <li>Offering training and mentoring to junior staff, sharing knowledge to improve team performance and overall service quality.</li>
+                        <li>Maintaining IT assets, overseeing software updates, and ensuring compliance with security protocols.</li>
+                        <li>Leading root cause analysis and implementing solutions to prevent recurring issues.</li>
+                        <li>Collaborating with cross-functional teams to drive continuous improvement initiatives in IT service management.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previous Position 3 -->
+        <div class="experience-item">
+            <div class="job-title">Repair Engineer</div>
+            <div class="company">Wistron Philippines</div>
+            <div class="date">June 2018 - February 2020</div>
+
+            <div class="description">
+                <div class="role-section">
+                    <div class="role-title">Computer Hardware Engineer</div>
+                    <ul>
+                        <li>Motherboard Repair & Diagnostics: Specialized in the repair and diagnostics of various types of motherboards, identifying and resolving hardware issues with high precision and efficiency. 
+                            Utilized advanced tools and techniques to repair damaged components and restore full functionality.</li>
+                        <li>Component Replacement & Soldering: Conducted the replacement of high-end components such as capacitors, resistors, and microchips using precision soldering techniques. 
+                            Ensured all components met manufacturer standards for reliability and performance.</li>
+                        <li>Technical Troubleshooting: Analyzed complex hardware malfunctions, ran diagnostic tests, and identified root causes of issues. 
+                            Applied effective troubleshooting techniques to repair or replace defective parts, ensuring minimal downtime for clients.</li>
+                        <li>Collaboration with Engineering Teams: Worked closely with cross-functional teams, including product engineers and R&D, 
+                            to improve repair processes, enhance system designs, and provide feedback on recurring issues.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="skills-section">
+            <h2 class="skills-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <div class="skill-group-title">Programming Languages & Frameworks</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Database & Infrastructure</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Cloud & DevOps</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Specializations</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI</span>
+                        <span class="skill-tag">System Architecture</span>
+                        <span class="skill-tag">DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    </div>
+</body>
+
+</html>
